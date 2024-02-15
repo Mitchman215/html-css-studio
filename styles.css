@@ -1,20 +1,49 @@
-#logoBar{
+#logoBar {
   width: 30vw;
-  height: 100vh;
+  height: 20rem;
 }
-#siteLogo{
+#siteLogo {
   width: 100%;
 }
-body {
-  display: flex;
-}
-#staffGallery{
-  width: 70vw;
-  display: inherit;
 
+body {
+  font-family: copperplate;
+  display: flex;
+  background-color: antiquewhite;
+  color: darkslategray;
 }
-.galleryImage{
-  width: 100%;
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#staffGallery {
+  /* width: 70vw; */
+  display: inherit;
+  flex-wrap: wrap;
+  align-items: center;
+
+  /* justify-content: space-evenly; */
+}
+.galleryImage {
+  width: 100px;
   height: auto;
-  height: 300px;
+  /* aspect-ratio: 1 / 1; */
+  /* height: 300px; */
+}
+
+.card {
+  background-color: honeydew;
+  padding: 0.5rem;
+  margin: 0.75rem;
+  border: solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
 }
